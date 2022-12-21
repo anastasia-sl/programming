@@ -10,7 +10,7 @@ class Form {
 
   constructor(age=18,  name='Joh',  phone='+3800000000000', email='') {
     this.age = age;
-    this.name = name;
+    this.name=name;
     this.phone = phone;
     this.email = email;
   }
