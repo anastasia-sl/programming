@@ -97,7 +97,7 @@ let user = {
   },
 };
 
-// let field = 'name';
+// let field = 'age';
 // console.log(user.name);
 // console.log(user['name']);
 // console.log(user[field]);
@@ -115,6 +115,16 @@ let user = {
 // let age = user.age;
 
 
+let user = {
+  name: "Alex",
+  age: 20,
+  hand: {
+    size: 10
+  },
+};
+
+
+let name = 12;
 // деструктурирующее определение переменных
 let {
   name: userName, //переименование переменной конкретного свойства
@@ -123,6 +133,7 @@ let {
   hand,
   unknownProp = 'some value' //значение по умолчанию, если параметра не сущестует
 } = user;
+
 
 // hand.size++;
 //
@@ -133,15 +144,15 @@ let {
 
 
 // классическое клонирование объекта
-let userClone = {
-  name: user.name,
-  age: user.age,
-  hand: user.hand,
-};
+// let userClone = {
+//   name: user.name,
+//   age: user.age,
+//   hand: user.hand,
+// };
 
 // деструктурирующее клонирование объекта
-let {...userClone2} = user;
-let userClone3  = {...user};
+// let {...userClone2} = user;
+// let userClone3  = {...user};
 
 // userAges.hand.size++;
 //
@@ -154,13 +165,13 @@ let userClone3  = {...user};
 
 
 // ДЕСТРУКТУРИЗАЦИЯ  МАССИВА
-
-let googleResponse = ['Alya', 20, 49];
-
-// деструктурирующее клонирование массива
-let googleResponseClone = [...googleResponse];
-
-// деструктурирующее присваивание значений элементов массива определяемым переменным. Запятой можно пропускать неинтересующие элементы массива
-let [,,weight, unknownElement = 'some value'] = googleResponse;
-
-console.log(weight);
+//
+// let googleResponse = ['Alya', 20, 49];
+//
+// // деструктурирующее клонирование массива
+// let googleResponseClone = [...googleResponse];
+//
+// // деструктурирующее присваивание значений элементов массива определяемым переменным. Запятой можно пропускать неинтересующие элементы массива
+// let [,,weight, unknownElement = 'some value'] = googleResponse;
+//
+// console.log(weight);
