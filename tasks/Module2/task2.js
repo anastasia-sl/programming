@@ -13,6 +13,5 @@ function a(obj){
     return newArr;
 }
 
-
 const arr=[1, 10, 4, 8,];
 console.log(a(arr));

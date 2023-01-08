@@ -1,3 +1,4 @@
+'use strict';
 // Generate random password
 
 const generatePassword = (alphabet, length = 8) => {
@@ -22,4 +23,4 @@ const generatePassword = (alphabet, length = 8) => {
 
 console.log(generatePassword('ASDFGHJKLasdfghjkl123456789'));
 console.log(generatePassword('ASDFGHJKLasdfghjkl123456789', 6));
-console.log(generatePassword(['a', 'b', 'c', 'd', '1','2','3', '4', '5'], 6));
+console.log(generatePassword(['a', 'b', 'c', 'd', '1', '2', '3', '4', '5'], 6));
